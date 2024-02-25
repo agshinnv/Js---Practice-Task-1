@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/sass/style.scss">
+</head>
+<body>
+    <div class="content d-flex justify-content-center">
+        <h1>Orders</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="new-order">
+                    <div class="header">
+                        <h3>New order</h3>
+                    </div>
+                    <div class="fullname">
+                        <span>Fullname</span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="dish">
+                        <span>Dish</span>
+                        <select class="form-select"></select>
+                    </div>
+                    <div class="count">
+                        <span>Count</span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="price">
+                        <span>Price</span>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="button mt-3">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="current-order d-none">
+                    <div class="header">
+                        <h3>Current orders</h3>
+                    </div>
+                    <div class="fullname">
+                        <span>Fullname</span>
+                        <input type="text" class="form-control" disabled>
+                    </div>
+                    <div class="dish">
+                        <span>Food</span>
+                        <input type="text" class="form-control" disabled>
+                    </div>
+                    <div class="count">
+                        <span>Count</span>
+                        <input type="text" class="form-control" disabled>
+                    </div>
+                    <div class="price">
+                        <span>Total price</span>
+                        <input type="text" class="form-control" disabled>
+                    </div>
+                    <div class="status">
+                        <span>Status</span>
+                        <input type="text" class="form-control" value = "Pending"; style = "background-color: orange;" disabled>
+                    </div>
+                    <div class="button mt-3">
+                        <button class="btn btn-success confirm">Confirm</button>
+                        <button class="btn btn-danger refusal">Refusal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
